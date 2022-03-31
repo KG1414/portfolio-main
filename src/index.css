@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    margin: 0;
+    width: 100%;
+    
+} */
+
+body, html {
+    text-align: 'center';
+    overflow-x: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'spartan', sans-serif;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+p {
+    font-family: 'spartan', sans-serif;
+    line-height: 21px;
+}
+
+.navbar-brand {
+	font-family: "Ubuntu";
+	font-size: 2.5rem;
+}
+
+.container {
+    padding: 7% 15%;
+}
+
+
+
+

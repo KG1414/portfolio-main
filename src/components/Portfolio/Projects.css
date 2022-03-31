@@ -1,0 +1,317 @@
+#projects {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    padding-bottom: 10%;
+    margin: 0;
+    overflow-x:hidden !important;
+    width: 100% !important;
+}
+
+.toasty {
+    z-index: 11 !important;
+}
+
+.card-link-info {
+    font-size: 16px;
+}
+
+/* new code below */
+.project-body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.project-body .card-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div #tech-badges {
+    display: flex;
+    position: absolute;
+    vertical-align: bottom;
+    bottom: 0 !important;
+    flex-wrap: wrap;
+    margin-top: 100%;
+    padding-right: 8% !important;
+}
+
+.card-img-overlay {
+    padding: 5px !important;
+}
+
+.projects-heading {
+    text-align: center;
+    font-weight: bolder;
+	font-size: 64px;
+    color: white;
+    padding: 10% 0% 1% 0%;
+    margin-bottom: 1% !important;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.project-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 0 auto 7%;
+    padding: 2%;
+    border-radius: 30px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 25%), 0 5px 30px rgb(0 0 0 / 50%);
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.project-wrapper-two {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto 7%;
+    padding: 2%;
+    border-radius: 30px;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 25%), 0 5px 30px rgb(0 0 0 / 50%);
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+/* Text */
+
+.project-card-title {
+    font-weight: bold;
+    padding-top: 4%;
+	font-size: 2rem;
+	line-height: 1.5;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.05em;
+}
+
+/* Info Section */
+  
+
+.info-wrapper {
+    position: relative;
+    width: 40%;
+    height: auto;
+    padding-bottom: calc(40%*12/9);
+}
+
+.description-info {
+    margin-top: 6%;
+    color: #22577A !important;
+    line-height: 2;
+}
+
+.info {
+    color: white;
+}
+
+.logos-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0 !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    text-align: center !important;
+    flex-wrap: nowrap !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.logos-wrapper-two {
+    width: 100%;
+    bottom: 0 !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+    flex-wrap: nowrap !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/* Image Section */
+
+.outer-img-wrapper {
+    width: 60%;
+    position: relative;
+    display: flex;
+    height: auto;
+}
+
+.projects-img-wrapper {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#img {
+    width: 110%;
+    height: auto;
+    z-index: 100;
+}
+
+.title-desktop {
+    display: none;
+}
+
+.project-icon {
+        display: flex !important;
+        bottom: 0;
+        color: #ffffff;
+        padding: 20px !important;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/* smaller screen width changes */
+
+@media screen and (min-width: 900px) {
+    .project-body {
+        padding-top: 20%;
+        padding-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card-text.description-info.info {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .project-wrapper, .project-wrapper-two {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 2%;
+        clear: both;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
+    .card-img-overlay {
+        padding: 5px !important;
+        width: 100%;
+        align-items: center; 
+    }
+
+    .project-body {
+        height: 100%;
+        width: 100% !important;
+        position: relative;
+        padding: 0 10%;
+    }
+
+    .info-wrapper {
+        margin-left: 12%;
+        margin-right: 12%
+    }
+
+
+    #title-mobile {
+        display: none;
+    }
+
+    .outer-img-wrapper {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    #img {
+        height: auto;
+        width: 100%;
+    }
+
+    .title-desktop {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        
+        margin: auto;
+        text-align: center;
+
+        padding-top: 4%;
+
+        font-family: "ubuntu";
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.5;
+        padding: 2% 0% 0% 0%;
+        margin-bottom: 1% !important;
+        background-color: #74EBD5;
+        background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.05em;
+    }
+
+    .projects-heading {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        color: white;
+        padding: 10% 0% 1% 0%;
+        margin-bottom: 1% !important;
+        background-color: #74EBD5;
+        background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+        line-height: 1.5;
+    }
+
+    .card-subtitle {
+        font-weight: 600;
+    }
+
+    .card-text.description-info.info {
+        font-size: 12px;
+    }
+
+    .card-link-info {
+        font-size: 12px;
+    }
+
+    .info-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-bottom: calc(40%*12/9);
+        margin: 0;
+    }
+
+    .description-info {
+        margin-top: 5%;
+        color: #22577A !important;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-text.description-info.info {
+        font-size: 12px !important;
+    }
+
+    .probadge {
+        display: none;
+    }
+}
